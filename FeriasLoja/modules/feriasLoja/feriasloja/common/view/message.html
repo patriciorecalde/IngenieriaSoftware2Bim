@@ -1,0 +1,15 @@
+<div ng-if="visibility" style="z-index: 9999998;" class="navbar-fixed-bottom alert alert-dismissible {{alert.alertType}}">
+    <button type="button" class="close" aria-label="Close" ng-click="setVisibility(false);">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+    <h4><i style="font-size: 110%;" ng-class="alert.icon"></i> {{alert.title}}</h4>
+
+    {{alert.message}}
+
+    <div id="errorList" ng-if="alert.list != null">
+        <ul>
+            <li ng-repeat="message in alert.list">{{message}}</li>
+        </ul>
+    </div>
+</div>

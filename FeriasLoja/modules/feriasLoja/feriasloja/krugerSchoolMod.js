@@ -1,0 +1,1 @@
+var krugerSchool = angular.module('krugerSchoolMod', ['ngRoute','kendo.directives','ui.grid']);
